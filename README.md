@@ -12,6 +12,8 @@
 - [x] - Criar handler para os CodeBlocks
   - [x] - Adicionar syntax highlight para o handler
   - [x] - Adicionar os temas ao CodeBlock
+  - [ ] - Adicionar highlight em palavras especificas
+  - [ ] Adicionar numero de linhas
 - [x] - Criar contexto de temas para compartilhar ele entre o editor e o markdown
 - [ ] - Consertar o syntax highlight do editor quando usamos estados nele;
 - [ ] - Consertar o SSR do Remirror;
