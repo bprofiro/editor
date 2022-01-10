@@ -18,3 +18,4 @@
 - [ ] - Consertar o syntax highlight do editor quando usamos estados nele;
 - [ ] - Consertar o SSR do Remirror;
 - [ ] - Adicionar o Radix para deixar os componentes acessiveis;
+- [ ] - Fazer deploy
