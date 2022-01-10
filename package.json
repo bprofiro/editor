@@ -8,12 +8,44 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@remirror/pm": "^1.0.6",
+    "@remirror/react": "^1.0.15",
+    "@stitches/react": "^1.2.6",
+    "hast-to-hyperscript": "^10.0.1",
+    "hast-util-to-html": "^8.0.3",
+    "hast-util-to-string": "^2.0.0",
+    "marked": "^4.0.8",
     "next": "12.0.7",
+    "parse-numeric-range": "^1.3.0",
+    "polished": "^4.0.5",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-markdown": "^5.0.3",
+    "refractor": "^4.4.0",
+    "rehype-parse": "^8.0.3",
+    "remirror": "^1.0.56",
+    "unified": "^10.1.1",
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
-    "eslint": "8.6.0",
-    "eslint-config-next": "12.0.7"
+    "@types/marked": "^4.0.1",
+    "@types/node": "^14.14.20",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.4"
   }
 }
