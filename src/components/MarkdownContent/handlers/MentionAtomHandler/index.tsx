@@ -1,11 +1,15 @@
+import { RemirrorJSON } from 'remirror';
+
 import { Mention } from './styles';
 
-export const MentionAtomComponent = (props: any) => {
-  console.log({ props });
+type Props = {
+  node: RemirrorJSON;
+};
 
+export const MentionAtomComponent = ({ node }: Props) => {
   return (
-    <Mention href={props.node.attrs.link} target="_blank">
-      {props.node.attrs.label}
+    <Mention href={node.attrs.link as string} target="_blank">
+      {node.attrs.label as string}
     </Mention>
   );
 };

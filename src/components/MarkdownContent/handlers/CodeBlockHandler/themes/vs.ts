@@ -8,7 +8,8 @@ export const Vs = styled('div', {
 
   "code[class*='language-'], pre[class*='language-']": {
     color: '#393a34',
-    fontFamily: "'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace",
+    fontFamily:
+      "'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace",
     direction: 'ltr',
     textAlign: 'left',
     whiteSpace: 'pre',
@@ -20,13 +21,15 @@ export const Vs = styled('div', {
     hyphens: 'none',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    background: '#c1def1',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      background: '#c1def1',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    background: '#c1def1',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      background: '#c1def1',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -61,13 +64,15 @@ export const Vs = styled('div', {
     color: '#393a34',
   },
 
-  '.token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.inserted': {
-    color: '#36acaa',
-  },
+  '.token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.inserted':
+    {
+      color: '#36acaa',
+    },
 
-  ".token.atrule, .token.keyword, .token.attr-value, .language-autohotkey .token.selector, .language-json .token.boolean, .language-json .token.number, code[class*='language-css']": {
-    color: '#0000ff',
-  },
+  ".token.atrule, .token.keyword, .token.attr-value, .language-autohotkey .token.selector, .language-json .token.boolean, .language-json .token.number, code[class*='language-css']":
+    {
+      color: '#0000ff',
+    },
 
   '.token.function': {
     color: '#393a34',

@@ -7,7 +7,8 @@ export const DuotoneForest = styled('div', {
   padding: '$3',
 
   "code[class*='language-'], pre[class*='language-']": {
-    fontFamily: "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono','Nimbus Mono L', 'Courier New', Courier, monospace",
+    fontFamily:
+      "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono','Nimbus Mono L', 'Courier New', Courier, monospace",
     fontSize: '14px',
     lineHeight: '1.375',
     direction: 'ltr',
@@ -21,15 +22,17 @@ export const DuotoneForest = styled('div', {
     color: '#687d68',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    textShadow: 'none',
-    background: '#435643',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      textShadow: 'none',
+      background: '#435643',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    textShadow: 'none',
-    background: '#435643',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      textShadow: 'none',
+      background: '#435643',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -70,9 +73,10 @@ export const DuotoneForest = styled('div', {
     color: '#b3d6b3',
   },
 
-  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule': {
-    color: '#e5fb79',
-  },
+  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule':
+    {
+      color: '#e5fb79',
+    },
 
   '.token.placeholder, .token.variable': {
     color: '#e5fb79',
@@ -118,5 +122,5 @@ export const DuotoneForest = styled('div', {
 
   '.line-highlight': {
     background: 'rgba(162, 179, 77, 0.2)',
-  }
+  },
 });

@@ -14,5 +14,5 @@ export const Container = styled('main', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
 });

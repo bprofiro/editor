@@ -7,7 +7,8 @@ export const DuotoneSea = styled('div', {
   padding: '$3',
 
   "code[class*='language-'], pre[class*='language-']": {
-    fontFamily: "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
+    fontFamily:
+      "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
     fontSize: '14px',
     lineHeight: '1.375',
     direction: 'ltr',
@@ -21,15 +22,17 @@ export const DuotoneSea = styled('div', {
     color: '#57718e',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    textShadow: 'none',
-    background: '#004a9e',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      textShadow: 'none',
+      background: '#004a9e',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    textShadow: 'none',
-    background: '#004a9e',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      textShadow: 'none',
+      background: '#004a9e',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -66,13 +69,14 @@ export const DuotoneSea = styled('div', {
     color: '#ebf4ff',
   },
 
-  'code.language-javascript, .token.attr-name':  {
+  'code.language-javascript, .token.attr-name': {
     color: '#7eb6f6',
   },
 
-  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule': {
-    color: '#47ebb4',
-  },
+  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule':
+    {
+      color: '#47ebb4',
+    },
 
   '.token.placeholder, .token.variable': {
     color: '#47ebb4',
@@ -118,5 +122,5 @@ export const DuotoneSea = styled('div', {
 
   '.line-highlight': {
     background: 'rgba(10, 163, 112, 0.2)',
-  }
+  },
 });

@@ -7,5 +7,5 @@ type Props = {
 };
 
 export const LinkComponent = ({ node }: Props) => {
-  return <Link>{node.text}</Link>;
+  return <Link href={node.text}>{node.text}</Link>;
 };

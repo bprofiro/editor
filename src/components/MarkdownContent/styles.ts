@@ -27,7 +27,7 @@ export const Markdown = styled('div', {
     padding: 0,
   },
 
-  'blockquote': {
+  blockquote: {
     borderLeft: '3px solid #dee2e6',
     marginLeft: 0,
     marginRight: 0,

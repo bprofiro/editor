@@ -57,17 +57,19 @@ export const Xonokai = styled('div', {
     color: '#e6d06c',
   },
 
-  '.token.entity, .token.url, .language-css .token.string, .style .token.string': {
-    color: '#e6d06c',
-  },
+  '.token.entity, .token.url, .language-css .token.string, .style .token.string':
+    {
+      color: '#e6d06c',
+    },
 
   '.token.selector, .token.inserted': {
     color: '#a6e22d',
   },
 
-  '.token.atrule, .token.attr-value, .token.keyword, .token.important, .token.deleted': {
-    color: '#ef3b7d',
-  },
+  '.token.atrule, .token.attr-value, .token.keyword, .token.important, .token.deleted':
+    {
+      color: '#ef3b7d',
+    },
 
   '.token.regex, .token.statement': {
     color: '#76d9e6',
@@ -122,7 +124,7 @@ export const Xonokai = styled('div', {
     padding: '1em 0 1em 3em',
   },
 
-  "pre[data-line] .line-highlight": {
+  'pre[data-line] .line-highlight': {
     position: 'absolute',
     left: '0',
     right: '0',
@@ -134,25 +136,26 @@ export const Xonokai = styled('div', {
     whiteSpace: 'pre',
   },
 
-  "pre[data-line] .line-highlight:before, pre[data-line] .line-highlight[data-end]:after": {
-    content: 'attr(data-start)',
-    position: 'absolute',
-    top: '0.4em',
-    left: '0.6em',
-    minWidth: '1em',
-    padding: '0.2em 0.5em',
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
-    color: 'black',
-    font: 'caption',
-    height: '1em',
-    lineHeight: '1em',
-    textAlign: 'center',
-    borderRadius: '999px',
-    textShadow: 'none',
-    boxShadow: '0 1px 1px rgba(255, 255, 255, 0.7)',
-  },
+  'pre[data-line] .line-highlight:before, pre[data-line] .line-highlight[data-end]:after':
+    {
+      content: 'attr(data-start)',
+      position: 'absolute',
+      top: '0.4em',
+      left: '0.6em',
+      minWidth: '1em',
+      padding: '0.2em 0.5em',
+      backgroundColor: 'rgba(255, 255, 255, 0.4)',
+      color: 'black',
+      font: 'caption',
+      height: '1em',
+      lineHeight: '1em',
+      textAlign: 'center',
+      borderRadius: '999px',
+      textShadow: 'none',
+      boxShadow: '0 1px 1px rgba(255, 255, 255, 0.7)',
+    },
 
-  "pre[data-line] .line-highlight[data-end]:after": {
+  'pre[data-line] .line-highlight[data-end]:after': {
     content: 'attr(data-end)',
     top: 'auto',
     bottom: '0.4em',

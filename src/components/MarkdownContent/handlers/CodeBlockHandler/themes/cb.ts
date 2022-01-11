@@ -8,7 +8,7 @@ export const Cb = styled('div', {
 
   "code[class*='language-'], pre[class*='language-']": {
     color: '#fff',
-    textShadow:   '0 1px 1px #000',
+    textShadow: '0 1px 1px #000',
     fontFamily: "Menlo, Monaco, 'Courier New', monospace",
     direction: 'ltr',
     textAlign: 'left',
@@ -48,9 +48,10 @@ export const Cb = styled('div', {
     color: '#797979',
   },
 
-  'token.selector, .token.operator, .token.punctuation, .token.punctuation.important': {
-    color: '#fff',
-  },
+  'token.selector, .token.operator, .token.punctuation, .token.punctuation.important':
+    {
+      color: '#fff',
+    },
 
   '.token.namespace': {
     opacity: 0.7,
@@ -64,9 +65,10 @@ export const Cb = styled('div', {
     color: '#b0c975',
   },
 
-  '.token.property, .token.entity, .token.url, .token.attr-name, .token.keyword': {
-    color: '#c27628',
-  },
+  '.token.property, .token.entity, .token.url, .token.attr-name, .token.keyword':
+    {
+      color: '#c27628',
+    },
 
   '.token.regex': {
     color: '#9b71c6',

@@ -22,8 +22,8 @@ export const Left = styled('section', {
     borderRadius: '$sm',
     background: '$grey-600',
     color: '$grey-100',
-    fontWeight: '$bold'
-  }
+    fontWeight: '$bold',
+  },
 });
 
 export const Right = styled('section', {

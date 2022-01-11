@@ -7,7 +7,8 @@ export const DuotoneSpace = styled('div', {
   padding: '$3',
 
   "code[class*='language-'], pre[class*='language-']": {
-    fontFamily: "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
+    fontFamily:
+      "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
     fontSize: '14px',
     lineHeight: '1.375',
     direction: 'ltr',
@@ -21,15 +22,17 @@ export const DuotoneSpace = styled('div', {
     color: '#767693',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    textShadow: 'none',
-    background: '#5151e6',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      textShadow: 'none',
+      background: '#5151e6',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    textShadow: 'none',
-    background: '#5151e6',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      textShadow: 'none',
+      background: '#5151e6',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -70,9 +73,10 @@ export const DuotoneSpace = styled('div', {
     color: '#aaaaca',
   },
 
-  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule': {
-    color: '#fe8c52',
-  },
+  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule':
+    {
+      color: '#fe8c52',
+    },
 
   '.token.placeholder, .token.variable': {
     color: '#fe8c52',

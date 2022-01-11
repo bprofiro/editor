@@ -1,4 +1,4 @@
-import { globalCss } from './';
+import { globalCss } from '.';
 
 export const globalStyles = globalCss({
   '*': {
@@ -53,7 +53,7 @@ export const globalStyles = globalCss({
       cursor: 'not-allowed',
       color: '#696969',
       background: '#191919',
-    }
+    },
   },
 
   '::-webkit-scrollbar': {

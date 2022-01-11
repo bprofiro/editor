@@ -1,4 +1,5 @@
 import { forwardRef, useCallback, useImperativeHandle } from 'react';
+
 import {
   MentionAtomExtension,
   BlockquoteExtension,
@@ -12,8 +13,6 @@ import {
   MarkdownExtension,
   PlaceholderExtension,
   StrikeExtension,
-  FormatterProps,
-  FormattedContent,
 } from 'remirror/extensions';
 import {
   EditorComponent,
@@ -24,11 +23,11 @@ import {
 } from '@remirror/react';
 
 import { EMPTY_DOC } from '~/common/placeholders/empty-doc';
-import { Mention } from './Mention';
-
 import { getEditorLanguages } from '~/utils/get-editor-languages';
-import { Controls } from './Controls';
 import { useTheme } from '~/hooks/useTheme';
+
+import { Mention } from './Mention';
+import { Controls } from './Controls';
 import { Container } from './styles';
 import 'remirror/styles/all.css';
 
@@ -86,7 +85,7 @@ export const Editor = forwardRef<EditorHandles, Props>(
         new CodeBlockExtension({
           supportedLanguages: getEditorLanguages(),
           defaultLanguage: 'javascript',
-          syntaxTheme: 'xonokai',
+          syntaxTheme: currentTheme,
         }),
       ],
       [currentTheme],

@@ -7,7 +7,8 @@ export const DuotoneDark = styled('div', {
   padding: '$3',
 
   "code[class*='language-'], pre[class*='language-']": {
-    fontFamily: "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
+    fontFamily:
+      "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
     fontSize: '14px',
     lineHeight: '1.375',
     direction: 'ltr',
@@ -21,15 +22,17 @@ export const DuotoneDark = styled('div', {
     color: '#9a86fd',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    textShadow: 'none',
-    background: '#6a51e6',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      textShadow: 'none',
+      background: '#6a51e6',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    textShadow: 'none',
-    background: '#6a51e6',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      textShadow: 'none',
+      background: '#6a51e6',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -42,9 +45,10 @@ export const DuotoneDark = styled('div', {
     borderRadius: '0.3em',
   },
 
-  '.token.comment, .token.prolog, .token.doctype, .token.cdata, .token.punctuation, .token.punctuation.important': {
-    color: '#6c6783',
-  },
+  '.token.comment, .token.prolog, .token.doctype, .token.cdata, .token.punctuation, .token.punctuation.important':
+    {
+      color: '#6c6783',
+    },
 
   '.token.namespace': {
     opacity: 0.7,
@@ -66,9 +70,10 @@ export const DuotoneDark = styled('div', {
     color: '#c4b9fe',
   },
 
-  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule': {
-    color: '#ffcc99',
-  },
+  'code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule':
+    {
+      color: '#ffcc99',
+    },
 
   '.token.placeholder, .token.variable': {
     color: '#ffcc99',
@@ -114,5 +119,5 @@ export const DuotoneDark = styled('div', {
 
   '.line-highlight': {
     background: 'rgba(224, 145, 66, 0.2)',
-  }
+  },
 });

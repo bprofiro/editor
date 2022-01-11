@@ -8,7 +8,7 @@ export const useThrottledEffect = (
   const lastRan = useRef(Date.now());
 
   useEffect(() => {
-    const handler = setTimeout(function () {
+    const handler = setTimeout(() => {
       if (Date.now() - lastRan.current >= delay) {
         callback();
         lastRan.current = Date.now();
@@ -18,6 +18,6 @@ export const useThrottledEffect = (
     return () => {
       clearTimeout(handler);
     };
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [delay, ...deps]);
 };

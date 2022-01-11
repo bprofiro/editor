@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { useThrottledEffect } from '~/hooks/useThrottledEffect';
-
 import { MentionAtomPopupComponent, MentionAtomState } from '@remirror/react';
+
+import { useThrottledEffect } from '~/hooks/useThrottledEffect';
 
 import { Item } from './Item';
 

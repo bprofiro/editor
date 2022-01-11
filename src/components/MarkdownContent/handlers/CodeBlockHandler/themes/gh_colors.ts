@@ -8,7 +8,8 @@ export const GhColors = styled('div', {
 
   "code[class*='language-'], pre[class*='language-']": {
     color: '#393a34',
-    fontFamily: "Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace",
+    fontFamily:
+      "Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace",
     direction: 'ltr',
     textAlign: 'left',
     whiteSpace: 'pre',
@@ -20,13 +21,15 @@ export const GhColors = styled('div', {
     hyphens: 'none',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    background: '#b3d4fc',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      background: '#b3d4fc',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    background: '#b3d4fc',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      background: '#b3d4fc',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -60,13 +63,15 @@ export const GhColors = styled('div', {
     color: '#393a34',
   },
 
-  '.token.entity, .token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.property, .token.regex, .token.inserted': {
-    color: '#36acaa',
-  },
+  '.token.entity, .token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.property, .token.regex, .token.inserted':
+    {
+      color: '#36acaa',
+    },
 
-  '.token.atrule, .token.keyword, .token.attr-name, .language-autohotkey .token.selector': {
-    color: '#00a4db',
-  },
+  '.token.atrule, .token.keyword, .token.attr-name, .language-autohotkey .token.selector':
+    {
+      color: '#00a4db',
+    },
 
   '.token.function, .token.deleted, .language-autohotkey .token.tag': {
     color: '#9a050f',

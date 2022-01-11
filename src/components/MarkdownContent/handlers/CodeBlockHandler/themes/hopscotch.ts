@@ -7,7 +7,8 @@ export const Hopscotch = styled('div', {
   padding: '$3',
 
   "code[class*='language-'], pre[class*='language-']": {
-    fontFamily: "'Fira Mono', Menlo, Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
+    fontFamily:
+      "'Fira Mono', Menlo, Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     fontSize: '16px',
     lineHeight: '1.375',
     direction: 'ltr',
@@ -65,17 +66,19 @@ export const Hopscotch = styled('div', {
     color: '#c85e7c',
   },
 
-  '.token.attr-name':  {
+  '.token.attr-name': {
     color: '#fd8b19',
   },
 
-  '.token.entity, .token.url, .language-css .token.string, .style .token.string': {
-    color: '#149b93',
-  },
+  '.token.entity, .token.url, .language-css .token.string, .style .token.string':
+    {
+      color: '#149b93',
+    },
 
-  '.token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit': {
-    color: '#8fc13e',
-  },
+  '.token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit':
+    {
+      color: '#8fc13e',
+    },
 
   '.token.statement, .token.regex, .token.atrule': {
     color: '#149b93',

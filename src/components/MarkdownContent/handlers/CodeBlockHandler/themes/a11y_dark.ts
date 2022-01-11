@@ -45,21 +45,24 @@ export const A11yDark = styled('div', {
     color: '#fefefe',
   },
 
-  '.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted': {
-    color: '#ffa07a',
-  },
+  '.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted':
+    {
+      color: '#ffa07a',
+    },
 
   '.token.boolean, .token.number': {
     color: '#00e0e0',
   },
 
-  '.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted': {
-    color: '#abe338',
-  },
+  '.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted':
+    {
+      color: '#abe338',
+    },
 
-  '.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable': {
-    color: '#00e0e0',
-  },
+  '.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable':
+    {
+      color: '#00e0e0',
+    },
 
   '.token.atrule, .token.attr-value, .token.function': {
     color: '#ffd700',

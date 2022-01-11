@@ -1,4 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
+
+import Head from 'next/head';
+
 import { Button } from '~/components/Button';
 import { Editor, EditorHandles } from '~/components/Editor';
 import { MarkdownContent } from '~/components/MarkdownContent';
@@ -21,6 +24,9 @@ export const Home = () => {
 
   return (
     <Container>
+      <Head>
+        <title>Editor</title>
+      </Head>
       <Wrapper>
         {isEditorVisible && <Editor ref={editorRef} onSubmit={handleSubmit} />}
 

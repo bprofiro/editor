@@ -32,4 +32,4 @@ export const EditorTheme = {
   pojoaque: Pojoaque,
   vs: Vs,
   xonokai: Xonokai,
-}
+};

@@ -1,5 +1,6 @@
 import { createStitches, defaultThemeMap } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
+
 import { colors } from './colors';
 
 export const {

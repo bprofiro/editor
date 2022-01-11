@@ -33,8 +33,8 @@ export const Dracula = styled('div', {
   },
 
   ":not(pre) > code[class*='language-']": {
-    padding:'0.1em',
-    borderRadius:'0.3em',
+    padding: '0.1em',
+    borderRadius: '0.3em',
     whiteSpace: 'normal',
   },
 
@@ -50,21 +50,24 @@ export const Dracula = styled('div', {
     opacity: '0.7',
   },
 
-  '.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted': {
-    color: '#ff79c6',
-  },
+  '.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted':
+    {
+      color: '#ff79c6',
+    },
 
   '.token.boolean, .token.number': {
     color: '#bd93f9',
   },
 
-  '.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted': {
-    color: '#50fa7b',
-  },
+  '.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted':
+    {
+      color: '#50fa7b',
+    },
 
-  '.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable': {
-    color: '#f8f8f2',
-  },
+  '.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable':
+    {
+      color: '#f8f8f2',
+    },
 
   '.token.atrule, .token.attr-value, .token.function, .token.class-name': {
     color: '#f1fa8c',

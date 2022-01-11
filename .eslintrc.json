@@ -50,6 +50,7 @@
       }
     ],
     "consistent-return": "off",
+    "react/no-danger": "off",
     "import-helpers/order-imports": [
       "warn",
       {
@@ -57,8 +58,8 @@
         "groups": [
           "/^react$/",
           "module",
-          ["parent", "sibling", "index", "/^@shared/skylab/"],
-          ["/^~/"]
+          ["/^~/"],
+          ["parent", "sibling", "index", "/^@shared/skylab/"]
         ],
         "alphabetize": { "order": "ignore", "ignoreCase": true }
       }

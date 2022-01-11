@@ -1,4 +1,3 @@
 import { styled } from '~/styles';
 
-export const Container = styled('pre', {
-});
+export const Container = styled('pre', {});

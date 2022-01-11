@@ -1,7 +1,7 @@
+import { useRemirrorContext } from '@remirror/react';
+
 import { Button } from '../../Button';
 import { Container, Left, Right } from './styles';
-import { useCommands, useRemirrorContext } from '@remirror/react';
-import { useTheme } from '../../../hooks/useTheme';
 
 type Props = {
   onSubmit: () => void;
@@ -9,14 +9,9 @@ type Props = {
 
 export const Controls = ({ onSubmit }: Props) => {
   const { chain } = useRemirrorContext();
-  const { toggleTheme } = useTheme();
 
   const handleBold = () => {
     chain.toggleBold().focus('end').run();
-  };
-
-  const handleTheme = () => {
-    toggleTheme('a11y_dark');
   };
 
   const handleItalic = () => {
@@ -42,16 +37,20 @@ export const Controls = ({ onSubmit }: Props) => {
   return (
     <Container>
       <Left>
-        <button onClick={handleBold}>B</button>
-        <button onClick={handleItalic}>
+        <button type="button" onClick={handleBold}>
+          B
+        </button>
+        <button type="button" onClick={handleItalic}>
           <i>I</i>
         </button>
-        <button onClick={handleStrike}>
+        <button type="button" onClick={handleStrike}>
           <s>S</s>
         </button>
-        <button onClick={handleCode}>{`< >`}</button>
-        <button onClick={handleCallout}>{`"`}</button>
-        <button onClick={handleCodeBlock}>{`{ }`}</button>
+        <button type="button" onClick={handleCode}>{`< >`}</button>
+        <button type="button" onClick={handleCallout}>
+          &quot;
+        </button>
+        <button type="button" onClick={handleCodeBlock}>{`{ }`}</button>
       </Left>
 
       <Right>

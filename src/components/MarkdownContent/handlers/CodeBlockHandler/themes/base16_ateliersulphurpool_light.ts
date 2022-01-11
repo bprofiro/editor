@@ -7,7 +7,8 @@ export const Base16AteliersulphurpoolLight = styled('div', {
   padding: '$3',
 
   "code[class*='language-'], pre[class*='language-']": {
-    fontFamily: "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
+    fontFamily:
+      "Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace",
     fontSize: '14px',
     lineHeight: '1.375',
     direction: 'ltr',
@@ -21,15 +22,17 @@ export const Base16AteliersulphurpoolLight = styled('div', {
     color: '#5e6687',
   },
 
-  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection": {
-    textShadow: 'none',
-    background: '#dfe2f1',
-  },
+  "pre[class*='language-']::-moz-selection, pre[class*='language-'] ::-moz-selection, code[class*='language-']::-moz-selection, code[class*='language-'] ::-moz-selection":
+    {
+      textShadow: 'none',
+      background: '#dfe2f1',
+    },
 
-  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection": {
-    textShadow: 'none',
-    background: '#dfe2f1',
-  },
+  "pre[class*='language-']::selection, pre[class*='language-'] ::selection, code[class*='language-']::selection, code[class*='language-'] ::selection":
+    {
+      textShadow: 'none',
+      background: '#dfe2f1',
+    },
 
   "pre[class*='language-']": {
     padding: '1em',
@@ -78,12 +81,14 @@ export const Base16AteliersulphurpoolLight = styled('div', {
     color: '#c76b29',
   },
 
-  '.token.entity, .token.url, .language-css .token.string, .style .token.string': {
-    color: '#22a2c9',
-  },
-  '.token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit': {
-    color: '#ac9739',
-  },
+  '.token.entity, .token.url, .language-css .token.string, .style .token.string':
+    {
+      color: '#22a2c9',
+    },
+  '.token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit':
+    {
+      color: '#ac9739',
+    },
 
   '.token.statement, .token.regex, .token.atrule': {
     color: '#22a2c9',

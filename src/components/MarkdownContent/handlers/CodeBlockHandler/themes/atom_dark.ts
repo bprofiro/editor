@@ -6,10 +6,11 @@ export const AtomDark = styled('div', {
   margin: '$4 0',
   padding: '$3',
 
-  "code[class*='language-'], pre[class*='language-']":  {
+  "code[class*='language-'], pre[class*='language-']": {
     color: '#c5c8c6',
     textShadow: '0 1px rgba(0, 0, 0, 0.3)',
-    fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
+    fontFamily:
+      "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
     direction: 'ltr',
     textAlign: 'left',
     whiteSpace: 'pre',
@@ -69,9 +70,10 @@ export const AtomDark = styled('div', {
     color: '#ff73fd',
   },
 
-  '.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted': {
-    color: '#a8ff60',
-  },
+  '.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted':
+    {
+      color: '#a8ff60',
+    },
 
   '.token.variable': {
     color: '#c6c5fe',
@@ -110,7 +112,7 @@ export const AtomDark = styled('div', {
     color: '#fd971f',
   },
 
-  '.token.important, .token.bold':{
+  '.token.important, .token.bold': {
     fontWeight: 'bold',
   },
 
