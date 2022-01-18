@@ -33,6 +33,7 @@ import 'remirror/styles/all.css';
 
 type Props = {
   onSubmit: () => void;
+  onFocus: () => void;
   initialContent?: typeof EMPTY_DOC;
 };
 
@@ -56,7 +57,7 @@ export type EditorHandles = ReactFrameworkOutput<
 };
 
 export const Editor = forwardRef<EditorHandles, Props>(
-  ({ onSubmit, initialContent }, ref) => {
+  ({ onSubmit, initialContent, onFocus }, ref) => {
     const { currentTheme } = useTheme();
 
     const extensions = useCallback(
@@ -115,6 +116,7 @@ export const Editor = forwardRef<EditorHandles, Props>(
         <Remirror
           manager={manager}
           initialContent={initialContent?.doc || EMPTY_DOC.doc}
+          onFocus={onFocus}
         >
           <EditorComponent />
           <Mention />

@@ -15,11 +15,13 @@ export const Home = () => {
     JSON.stringify(EMPTY_DOC),
   );
   const [isEditorVisible, setIsEditorVisible] = useState(false);
+  const [isMarkdownVisible, setIsMarkdownVisible] = useState(false);
 
   const handleSubmit = useCallback(() => {
     const content = JSON.stringify(editorRef.current.getState().toJSON());
 
     setMarkdownContent(content);
+    setIsMarkdownVisible(true);
   }, []);
 
   return (
@@ -28,12 +30,18 @@ export const Home = () => {
         <title>Editor</title>
       </Head>
       <Wrapper>
-        {isEditorVisible && <Editor ref={editorRef} onSubmit={handleSubmit} />}
+        {isEditorVisible && (
+          <Editor
+            ref={editorRef}
+            onFocus={() => setIsMarkdownVisible(false)}
+            onSubmit={handleSubmit}
+          />
+        )}
 
         <Button onClick={() => setIsEditorVisible((prevState) => !prevState)}>
           {isEditorVisible ? 'Esconder Editor' : 'Mostrar editor!'}
         </Button>
-        <MarkdownContent content={markdownContent} />
+        {isMarkdownVisible && <MarkdownContent content={markdownContent} />}
       </Wrapper>
     </Container>
   );
