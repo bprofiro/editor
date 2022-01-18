@@ -27,7 +27,7 @@ import { getEditorLanguages } from '~/utils/get-editor-languages';
 import { useTheme } from '~/hooks/useTheme';
 
 import { Mention } from './Mention';
-import { Controls } from './Controls';
+import { Toolbar } from './Toolbar';
 import { Container } from './styles';
 import 'remirror/styles/all.css';
 
@@ -120,7 +120,7 @@ export const Editor = forwardRef<EditorHandles, Props>(
         >
           <EditorComponent />
           <Mention />
-          <Controls onSubmit={onSubmit} />
+          <Toolbar onSubmit={onSubmit} />
         </Remirror>
       </Container>
     );

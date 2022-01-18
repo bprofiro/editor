@@ -10,7 +10,7 @@ type Props = {
   onSubmit: () => void;
 };
 
-export const Controls = ({ onSubmit }: Props) => {
+export const Toolbar = ({ onSubmit }: Props) => {
   const { chain } = useRemirrorContext();
   const { bold, italic, strike, code, callout, codeBlock } = useActive();
 
