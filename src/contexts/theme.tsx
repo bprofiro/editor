@@ -12,7 +12,6 @@ export type ThemeState =
   | 'duotone_dark'
   | 'duotone_earth'
   | 'duotone_forest'
-  | 'duotone_light'
   | 'duotone_sea'
   | 'duotone_space'
   | 'gh_colors'

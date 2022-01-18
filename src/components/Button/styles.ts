@@ -13,4 +13,9 @@ export const Container = styled('button', {
 
   marginTop: '$4',
   marginLeft: 'auto',
+  transition: 'background 0.5s',
+
+  '&:hover': {
+    background: '$rocketseat-light',
+  },
 });
