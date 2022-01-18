@@ -43,9 +43,7 @@ Table of contents
 - [Table of contents](#table-of-contents)
   - [💻 About](#-about)
   - [🛠 Techs](#-techs)
-      - [**Web**](#web)
   - [💪 How to contribute to the project](#-how-to-contribute-to-the-project)
-  - [4. Submit your changes: `git push origin my-feature`](#4-submit-your-changes-git-push-origin-my-feature)
   - [🦸 Autor](#-autor)
   - [📝 License](#-license)
 <!--te-->
@@ -58,7 +56,6 @@ React Accessibility - This project was created with the intention of studying th
 ## 🛠 Techs
 
 The following tools were used in building the project:
-#### **Web**
 
 -   **[React](https://pt-br.reactjs.org/)**
 -   **[NextJS](https://nextjs.org/docs/getting-started)**
