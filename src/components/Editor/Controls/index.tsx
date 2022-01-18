@@ -1,6 +1,9 @@
-import { useRemirrorContext } from '@remirror/react';
+import { useActive, useRemirrorContext } from '@remirror/react';
 
-import { Button } from '../../Button';
+import { Button } from '~/components/Button';
+
+import { ToolbarButton } from './components/ToolbarButton';
+import { ThemeDropdown } from './components/ThemeDropdown';
 import { Container, Left, Right } from './styles';
 
 type Props = {
@@ -9,6 +12,7 @@ type Props = {
 
 export const Controls = ({ onSubmit }: Props) => {
   const { chain } = useRemirrorContext();
+  const { bold, italic, strike, code, callout, codeBlock } = useActive();
 
   const handleBold = () => {
     chain.toggleBold().focus('end').run();
@@ -37,20 +41,55 @@ export const Controls = ({ onSubmit }: Props) => {
   return (
     <Container>
       <Left>
-        <button type="button" onClick={handleBold}>
+        <ToolbarButton
+          accessibility={{ value: 'negrito', ariaLabel: 'Texto em negrito' }}
+          onClick={handleBold}
+          tooltipContent="Negrito"
+          isActiveFunction={bold}
+        >
           B
-        </button>
-        <button type="button" onClick={handleItalic}>
+        </ToolbarButton>
+        <ToolbarButton
+          accessibility={{ value: 'italic', ariaLabel: 'Texto em Italico' }}
+          onClick={handleItalic}
+          tooltipContent="Italico"
+          isActiveFunction={italic}
+        >
           <i>I</i>
-        </button>
-        <button type="button" onClick={handleStrike}>
+        </ToolbarButton>
+        <ToolbarButton
+          accessibility={{ value: 'strike', ariaLabel: 'Texto em Strike' }}
+          onClick={handleStrike}
+          tooltipContent="Strike"
+          isActiveFunction={strike}
+        >
           <s>S</s>
-        </button>
-        <button type="button" onClick={handleCode}>{`< >`}</button>
-        <button type="button" onClick={handleCallout}>
+        </ToolbarButton>
+        <ToolbarButton
+          accessibility={{ value: 'code', ariaLabel: 'Texto em code' }}
+          onClick={handleCode}
+          tooltipContent="Code"
+          isActiveFunction={code}
+        >
+          {`</>`}
+        </ToolbarButton>
+        <ToolbarButton
+          accessibility={{ value: 'callout', ariaLabel: 'Fazer um callout' }}
+          onClick={handleCallout}
+          tooltipContent="Callout"
+          isActiveFunction={callout}
+        >
           &quot;
-        </button>
-        <button type="button" onClick={handleCodeBlock}>{`{ }`}</button>
+        </ToolbarButton>
+        <ToolbarButton
+          accessibility={{ value: 'codeblock', ariaLabel: 'Bloco de código' }}
+          onClick={handleCodeBlock}
+          tooltipContent="Bloco de código"
+          isActiveFunction={codeBlock}
+        >
+          {`{ }`}
+        </ToolbarButton>
+        <ThemeDropdown />
       </Left>
 
       <Right>

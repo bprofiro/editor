@@ -1,6 +1,8 @@
+import * as Toolbar from '@radix-ui/react-toolbar';
+
 import { styled } from '~/styles';
 
-export const Container = styled('div', {
+export const Container = styled(Toolbar.Root, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
@@ -14,16 +16,6 @@ export const Left = styled('section', {
   gap: '$3',
   display: 'flex',
   alignItems: 'center',
-
-  button: {
-    width: '$10',
-    height: '$10',
-    border: 'none',
-    borderRadius: '$sm',
-    background: '$grey-600',
-    color: '$grey-100',
-    fontWeight: '$bold',
-  },
 });
 
 export const Right = styled('section', {
