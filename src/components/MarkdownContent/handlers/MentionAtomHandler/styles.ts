@@ -1,7 +1,7 @@
 import { styled } from '~/styles';
 
 export const Mention = styled('a', {
-  color: '$rocketseat-mid',
+  color: '$primary',
   fontFamily: '$default',
   lineHeight: '$base',
   margin: 0,

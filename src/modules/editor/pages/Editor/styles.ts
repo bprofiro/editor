@@ -4,10 +4,6 @@ export const Wrapper = styled('div', {
   minWidth: '40rem',
   width: '100%',
   maxWidth: '70rem',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
 });
 
 export const Container = styled('main', {

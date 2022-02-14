@@ -1,7 +1,7 @@
 import { styled } from '~/styles';
 
 export const Container = styled('button', {
-  background: '$rocketseat-mid',
+  background: '$primary',
   color: '$grey-100',
   fontSize: '$md',
   borderRadius: '$sm',
@@ -13,9 +13,9 @@ export const Container = styled('button', {
 
   marginTop: '$4',
   marginLeft: 'auto',
-  transition: 'background 0.5s',
+  transition: 'filter 0.5s',
 
   '&:hover': {
-    background: '$rocketseat-light',
+    filter: 'brightness(0.8)',
   },
 });

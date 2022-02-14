@@ -18,9 +18,13 @@ export const globalStyles = globalCss({
     color: '$text-base',
   },
 
+  'h1, h2, h3, h4, h5, h6': {
+    color: '$text-title',
+  },
+
   a: {
     textDecoration: 'none',
-    color: '$rocketseat-mid',
+    color: '$primary',
   },
 
   ul: {

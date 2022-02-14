@@ -1,12 +1,13 @@
 import { useCallback } from 'react';
 
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import { useRouter } from 'next/router';
 
 import { ThemeState } from '~/contexts/theme';
 import { useTheme } from '~/hooks/useTheme';
+import { Button } from '~/components/Button';
 
-import { ToolbarButton } from '../ToolbarButton';
-import { Content, Item, Button } from './styles';
+import { Content, Item, DropdownMenuTrigger } from './styles';
 
 const themes = [
   'a11y_dark',
@@ -29,25 +30,22 @@ const themes = [
 ];
 
 export const ThemeDropdown = () => {
-  const { toggleTheme } = useTheme();
+  const { toggleTheme, currentTheme } = useTheme();
+  const router = useRouter();
 
   const handleChangeTheme = useCallback(
     (theme: string) => {
       toggleTheme(theme as ThemeState);
+      // router.push('/editor');
     },
-    [toggleTheme],
+    [toggleTheme, router],
   );
+
+  console.log({ currentTheme });
 
   return (
     <DropdownMenu.Root>
-      <Button>
-        <ToolbarButton
-          accessibility={{ value: 'temas', ariaLabel: 'Escolha um tema' }}
-          tooltipContent="Temas"
-        >
-          T
-        </ToolbarButton>
-      </Button>
+      <DropdownMenuTrigger>Temas</DropdownMenuTrigger>
 
       <Content>
         {themes.map((theme) => (

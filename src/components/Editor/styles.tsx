@@ -53,7 +53,7 @@ export const Container = styled('div', {
       fontWeight: 'normal',
       fontSize: '$md',
 
-      color: '$rocketseat-light',
+      color: '$secondary',
 
       background: 'transparent',
     },

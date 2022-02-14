@@ -19,7 +19,7 @@ export const Markdown = styled('div', {
   },
 
   '.remirror-mention-atom, .remirror-suggest-atom, .suggest-tag': {
-    color: '$rocketseat-mid',
+    color: '$primary',
     fontFamily: '$default',
     fontWeight: '$regular',
     lineHeight: '$base',

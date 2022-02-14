@@ -22,9 +22,23 @@ const slideLeftAndFade = keyframes({
   '100%': { opacity: 1, transform: 'translateX(0)' },
 });
 
-export const Button = styled(DropdownMenu.Trigger, {
-  background: 'transparent',
+export const DropdownMenuTrigger = styled(DropdownMenu.Trigger, {
+  background: '$primary',
+  color: '$grey-100',
+  fontSize: '$md',
+  borderRadius: '$sm',
+  textTransform: 'uppercase',
   border: 'none',
+  fontWeight: 'bold',
+
+  padding: '$3 $5',
+  marginTop: '$3',
+
+  transition: 'filter 0.5s',
+
+  '&:hover': {
+    filter: 'brightness(0.8)',
+  },
 });
 
 export const Content = styled(DropdownMenu.Content, {

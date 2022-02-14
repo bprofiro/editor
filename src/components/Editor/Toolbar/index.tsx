@@ -3,7 +3,6 @@ import { useActive, useRemirrorContext } from '@remirror/react';
 import { Button } from '~/components/Button';
 
 import { ToolbarButton } from './components/ToolbarButton';
-import { ThemeDropdown } from './components/ThemeDropdown';
 import { Container, Left, Right } from './styles';
 
 type Props = {
@@ -89,7 +88,6 @@ export const Toolbar = ({ onSubmit }: Props) => {
         >
           {`{ }`}
         </ToolbarButton>
-        <ThemeDropdown />
       </Left>
 
       <Right>

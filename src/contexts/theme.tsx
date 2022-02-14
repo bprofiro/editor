@@ -1,4 +1,6 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
+
+import * as themes from '~/styles/themes';
 
 import { PropsWithRequiredChildren } from '../common/types/index';
 
@@ -36,6 +38,10 @@ export const AppThemeProvider = ({ children }: PropsWithRequiredChildren) => {
   const toggleTheme = (theme: ThemeState) => {
     setCurrentTheme(theme);
   };
+
+  useEffect(() => {
+    document.body.className = themes[currentTheme];
+  }, [currentTheme]);
 
   return (
     <AppThemeContext.Provider value={{ currentTheme, toggleTheme }}>
