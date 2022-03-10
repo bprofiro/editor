@@ -1,5 +1,7 @@
 import { createContext, useEffect, useState } from 'react';
 
+import { parseCookies, setCookie } from 'nookies';
+
 import * as themes from '~/styles/themes';
 
 import { PropsWithRequiredChildren } from '../common/types/index';
@@ -33,10 +35,19 @@ export const AppThemeContext = createContext<AppThemeContextData>(
 );
 
 export const AppThemeProvider = ({ children }: PropsWithRequiredChildren) => {
-  const [currentTheme, setCurrentTheme] = useState<ThemeState>('a11y_dark');
+  const { editor_theme: cookiesTheme = 'a11y_dark' } = parseCookies();
+
+  const [currentTheme, setCurrentTheme] = useState<ThemeState>(
+    cookiesTheme as ThemeState,
+  );
 
   const toggleTheme = (theme: ThemeState) => {
     setCurrentTheme(theme);
+
+    setCookie(undefined, 'editor_theme', theme, {
+      maxAge: 60 * 60 * 24 * 30, // 30days
+      path: '/',
+    });
   };
 
   useEffect(() => {
