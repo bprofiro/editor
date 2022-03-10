@@ -44,7 +44,6 @@ Table of contents
   - [💻 About](#-about)
   - [🛠 Techs](#-techs)
   - [💪 How to contribute to the project](#-how-to-contribute-to-the-project)
-  - [4. Submit your changes: `git push origin my-feature`](#4-submit-your-changes-git-push-origin-my-feature)
   - [🦸 Author](#-author)
   - [📝 License](#-license)
 <!--te-->
