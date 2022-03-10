@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 
 import { ThemeState } from '~/contexts/theme';
 import { useTheme } from '~/hooks/useTheme';
-import { Button } from '~/components/Button';
 
 import { Content, Item, DropdownMenuTrigger } from './styles';
 
@@ -30,18 +29,16 @@ const themes = [
 ];
 
 export const ThemeDropdown = () => {
-  const { toggleTheme, currentTheme } = useTheme();
+  const { toggleTheme } = useTheme();
   const router = useRouter();
 
   const handleChangeTheme = useCallback(
     (theme: string) => {
       toggleTheme(theme as ThemeState);
-      // router.push('/editor');
+      router.push('/editor');
     },
     [toggleTheme, router],
   );
-
-  console.log({ currentTheme });
 
   return (
     <DropdownMenu.Root>

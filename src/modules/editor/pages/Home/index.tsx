@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
-import { a11y_dark } from '~/styles/themes';
+import { ThemeDropdown } from '~/components/ThemeDropdown';
 
-import { ThemeDropdown } from './ThemeDropdown';
 import { Container, Wrapper } from './styles';
 
 export const Home = () => {

@@ -22,10 +22,6 @@ export default class Document extends NextDocument {
             href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap"
             rel="stylesheet"
           />
-          {/* <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-dark.min.css"
-          /> */}
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
