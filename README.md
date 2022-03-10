@@ -25,7 +25,7 @@
   </a>
 </p>
 
-![image](https://user-images.githubusercontent.com/59852846/149960244-deb96951-9139-42c9-8d78-9a189fbb7815.png)
+![editor](https://user-images.githubusercontent.com/59852846/157658887-d323ca55-19f3-4cbf-bec0-787ddbafb7fc.gif)
 
 <p align="center">
   <a href="https://remirror-editor-demo.vercel.app/" target="_blank">
@@ -44,13 +44,16 @@ Table of contents
   - [💻 About](#-about)
   - [🛠 Techs](#-techs)
   - [💪 How to contribute to the project](#-how-to-contribute-to-the-project)
-  - [🦸 Autor](#-autor)
+  - [4. Submit your changes: `git push origin my-feature`](#4-submit-your-changes-git-push-origin-my-feature)
+  - [🦸 Author](#-author)
   - [📝 License](#-license)
 <!--te-->
 
 ## 💻 About
 
-React Accessibility - This project was created with the intention of studying the concepts of accessibility within React, with the basic functionalities expected by an accessible project: keyboard navigation, color contrast, easy reading by screen readers, good semantics.
+Editor - This project was created using the same technologies as the new front-end being built at Rocketseat (Next.JS and StitchesJS).
+
+His intention was to further test the Remirror tool to create an editor with some more features, such as choosing a theme for the code block or tagging users, so that the team could have an example a little more similar to what we want to apply.
 
 ---
 ## 🛠 Techs
@@ -73,7 +76,7 @@ The following tools were used in building the project:
 4. Submit your changes: `git push origin my-feature`
 ---
 
-## 🦸 Autor
+## 🦸 Author
 <p align="center">
   <a href="https://github.com/bprofiro">
   <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/59852846?s=460&u=7eefe48768a2c3f95271868f85d8e61f9ffbebad&v=4" width="100px;" alt=""/>
