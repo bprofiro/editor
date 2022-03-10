@@ -26,8 +26,8 @@ import { EMPTY_DOC } from '~/common/placeholders/empty-doc';
 import { getEditorLanguages } from '~/utils/get-editor-languages';
 import { useTheme } from '~/hooks/useTheme';
 
-import { Mention } from './Mention';
-import { Toolbar } from './Toolbar';
+import { Mention } from './components/Mention';
+import { Toolbar } from './components/Toolbar';
 import { Container } from './styles';
 import 'remirror/styles/all.css';
 
